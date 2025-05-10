@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stay updated with the latest news, events, and announcements from Mayuge Light Secondary School.">
+    <title>News & Events - Mayuge Light Secondary School</title>
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .header {
+            background-color: #1B6EF2;
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo img {
+            height: 60px;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .page-header {
+            background-color: #f5f5f5;
+            padding: 60px 0;
+            text-align: center;
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/IMG-20250422-WA0027.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            position: relative;
+        }
+        .page-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .section-title h2 {
+            font-size: 2rem;
+            color: #1B6EF2;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+        .news-list {
+        }
+        .news-card {
+            display: flex;
+            margin-bottom: 30px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .news-img {
+            width: 250px;
+            min-height: 180px;
+            overflow: hidden;
+        }
+        .news-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .news-content {
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .news-date {
+            color: #777;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+        .news-content h3 {
+            margin: 0 0 10px;
+            color: #1B6EF2;
+        }
+        .read-more {
+            color: #2A8C47;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        .sidebar {
+            
+        }
+        .sidebar-section {
+            margin-bottom: 30px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .sidebar-section h3 {
+            color: #1B6EF2;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #2A8C47;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        .sidebar-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar-section ul li {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+        .sidebar-section ul li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .event-date {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 5px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+        .event-date span:first-child {
+            background-color: #1B6EF2;
+            color: white;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+        }
+        .category-tag {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #f0f8f0;
+            color: #1B6EF2;
+            border-radius: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+        .category-tag:hover {
+            background-color: #1B6EF2;
+            color: white;
+        }
+        .newsletter-form {
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+        .btn-subscribe {
+            background-color: #1B6EF2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        .btn-subscribe:hover {
+            background-color: #1559c7;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+        .page-link {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s;
+        }
+        .page-link:hover, .page-link.active {
+            background-color: #1B6EF2;
+            color: white;
+            border-color: #1B6EF2;
+        }
+        .footer {
+            background-color: #1B6EF2;
+            color: white;
+            padding: 40px 0 20px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .footer-column h3 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #2A8C47;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        .footer-column a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer-column a:hover {
+            text-decoration: underline;
+        }
+        .copyright {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .page-title {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 40px 0;
+            }
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+            .news-card {
+                flex-direction: column;
+            }
+            .news-img {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <h1>MAYUGE LIGHT SS</h1>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="academics.html">Academics</a>
+                    <a href="admissions.html">Admissions</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="news.html">News</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="donate.html">Donate</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">News & Events</h1>
+            <p>Stay updated with the latest happenings at Mayuge Light Secondary School</p>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>School News</h2>
+            </div>
+            
+            <div class="news-grid">
+                <div class="news-list">
+                    <!-- News Item 1 -->
+                    <article class="news-card">
+                        <div class="news-img">
+                            <img src="images/IMG-20250422-WA0016.jpg" alt="Graduation Ceremony">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">May 1, 2025</div>
+                            <h3>Celebrating Our Graduating Class of 2025</h3>
+                            <p>Mayuge Light Secondary School proudly celebrated the graduation of the Class of 2025. The ceremony was attended by parents, teachers, and distinguished guests who joined in recognizing the achievements of our graduating students.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </article>
+                    
+                    <!-- News Item 2 -->
+                    <article class="news-card">
+                        <div class="news-img">
+                            <img src="images/IMG-20250422-WA0027.jpg" alt="Science Fair">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">April 20, 2025</div>
+                            <h3>Annual Science Fair Showcases Student Innovation</h3>
+                            <p>Our annual Science Fair was a resounding success, with students presenting innovative projects across various scientific disciplines. Visitors and judges were impressed by the creativity and scientific rigor displayed by our talented students.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </article>
+                    
+                    <!-- News Item 3 -->
+                    <article class="news-card">
+                        <div class="news-img">
+                            <img src="images/IMG-20250422-WA0032.jpg" alt="Sports Tournament">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">April 10, 2025</div>
+                            <h3>School Teams Excel in District Sports Tournament</h3>
+                            <p>Mayuge Light Secondary School's sports teams demonstrated exceptional skill and sportsmanship at the recent District Sports Tournament. Our football team secured first place, while our netball and athletics teams also performed admirably.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </article>
+                    
+                    <!-- News Item 4 -->
+                    <article class="news-card">
+                        <div class="news-img">
+                            <img src="images/IMG-20250422-WA0012.jpg" alt="Cultural Day">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">March 25, 2025</div>
+                            <h3>Cultural Day Celebrates Diversity and Heritage</h3>
+                            <p>Students and staff came together to celebrate the rich cultural diversity at Mayuge Light Secondary School. The day featured traditional dances, music, food, and attire representing various cultural groups.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </article>
+                    
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <a href="#" class="page-link active">1</a>
+                        <a href="#" class="page-link">2</a>
+                        <a href="#" class="page-link">3</a>
+                        <a href="#" class="page-link">→</a>
+                    </div>
+                </div>
+                
+                <div class="sidebar">
+                    <!-- Upcoming Events Section -->
+                    <div class="sidebar-section">
+                        <h3>Upcoming Events</h3>
+                        <ul>
+                            <li>
+                                <div class="event-date">
+                                    <span>15</span>
+                                    <span>May 2025</span>
+                                </div>
+                                <strong>Parent-Teacher Meeting</strong>
+                                <p>Annual meeting for parents to discuss student progress with teachers.</p>
+                            </li>
+                            <li>
+                                <div class="event-date">
+                                    <span>22</span>
+                                    <span>May 2025</span>
+                                </div>
+                                <strong>Career Day</strong>
+                                <p>Professionals from various fields will speak to students about career opportunities.</p>
+                            </li>
+                            <li>
+                                <div class="event-date">
+                                    <span>05</span>
+                                    <span>June 2025</span>
+                                </div>
+                                <strong>End of Term Examination</strong>
+                                <p>Final examinations for the term begin.</p>
+                            </li>
+                            <li>
+                                <div class="event-date">
+                                    <span>20</span>
+                                    <span>June 2025</span>
+                                </div>
+                                <strong>School Closing Day</strong>
+                                <p>End of term ceremony and report card distribution.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Categories Section -->
+                    <div class="sidebar-section">
+                        <h3>Categories</h3>
+                        <div>
+                            <a href="#" class="category-tag">Academics</a>
+                            <a href="#" class="category-tag">Events</a>
+                            <a href="#" class="category-tag">Sports</a>
+                            <a href="#" class="category-tag">Arts</a>
+                            <a href="#" class="category-tag">Community</a>
+                            <a href="#" class="category-tag">Achievements</a>
+                            <a href="#" class="category-tag">Alumni</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Newsletter Section -->
+                    <div class="sidebar-section">
+                        <h3>Newsletter</h3>
+                        <p>Subscribe to our newsletter to receive the latest news and updates from Mayuge Light Secondary School.</p>
+                        <form class="newsletter-form">
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email Address" required>
+                            </div>
+                            <button type="submit" class="btn-subscribe">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>P.O. Box 124, Mayuge, Uganda</li>
+                        <li>Phone: +256751018625 / +256750224121</li>
+                        <li>Mobile: +256782616387</li>
+                        <li>Email: info@mayugelightss.ac.ug</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="news.html">News & Events</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>School Leadership</h3>
+                    <ul>
+                        <li>Director: Mr. Batesa Moses</li>
+                        <li>Headteacher: Mr. Baliruno Isaac</li>
+                        <li>Deputy Academics: Ms. Nakakooza Jackyline</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect With Us</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Mayuge Light Secondary School. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

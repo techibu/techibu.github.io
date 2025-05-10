@@ -1,0 +1,16 @@
+{
+  "name": "Mayuge Light Secondary School",
+  "short_name": "Mayuge Light SS",
+  "description": "Mayuge Light Secondary School - Providing quality education in Mayuge, Uganda since 2009.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#1B6EF2",
+  "theme_color": "#1B6EF2",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Allow Google AdSense crawler
+User-agent: Mediapartners-Google
+Allow: /
+
+# Allow Google Mobile AdSense crawler
+User-agent: Mediapartners-Google*
+Allow: /
+
+# Allow Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Allow Googlebot Image
+User-agent: Googlebot-Image
+Allow: /
+
+# Important crawlable pages
+Allow: /about.html
+Allow: /academics.html
+Allow: /admissions.html
+Allow: /apply-now.html
+Allow: /gallery.html
+Allow: /news.html
+Allow: /contact.html
+Allow: /donate.html
+Allow: /privacy-policy.html
+Allow: /terms-of-service.html
+
+# Specify location of site map
+Sitemap: https://www.mayugelightss.ac.ug/sitemap.xml

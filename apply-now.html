@@ -1,0 +1,2383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apply online to Mayuge Light Secondary School. Complete our application form to begin your journey with us.">
+    <meta name="keywords" content="school application, Mayuge Light Secondary School, admissions, apply online, Uganda education">
+    <meta name="author" content="Mayuge Light Secondary School">
+    
+    <title>Apply Now - Mayuge Light Secondary School</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <style>
+        /* Enhanced Styling */
+        :root {
+            --accent: #F27405;
+            --accent-light: #FFA54C;
+            --primary: #1B6EF2;
+            --primary-dark: #1559c7;
+            --primary-light: #3a82f7;
+            --secondary: #2A8C47;
+            --secondary-dark: #1f6734;
+            --secondary-light: #35a955;
+            --white: #ffffff;
+            --light: #f8f9fa;
+            --dark: #333333;
+            --gray: #6c757d;
+            --border-radius: 8px;
+            --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            position: relative;
+        }
+        
+        .text-primary { color: var(--primary) !important; }
+        .text-secondary { color: var(--secondary) !important; }
+        .text-white { color: var(--white) !important; }
+        .text-center { text-align: center !important; }
+        
+        .bg-primary { background-color: var(--primary) !important; }
+        .bg-secondary { background-color: var(--secondary) !important; }
+        .bg-light { background-color: var(--light) !important; }
+        .bg-primary-light { background-color: var(--primary-light) !important; }
+        
+        .mb-0 { margin-bottom: 0 !important; }
+        .mb-1 { margin-bottom: 0.25rem !important; }
+        .mb-2 { margin-bottom: 0.5rem !important; }
+        .mb-3 { margin-bottom: 1rem !important; }
+        .mb-4 { margin-bottom: 1.5rem !important; }
+        .mb-5 { margin-bottom: 3rem !important; }
+        
+        .mt-0 { margin-top: 0 !important; }
+        .mt-1 { margin-top: 0.25rem !important; }
+        .mt-2 { margin-top: 0.5rem !important; }
+        .mt-3 { margin-top: 1rem !important; }
+        .mt-4 { margin-top: 1.5rem !important; }
+        .mt-5 { margin-top: 3rem !important; }
+        
+        .py-0 { padding-top: 0 !important; padding-bottom: 0 !important; }
+        .py-1 { padding-top: 0.25rem !important; padding-bottom: 0.25rem !important; }
+        .py-2 { padding-top: 0.5rem !important; padding-bottom: 0.5rem !important; }
+        .py-3 { padding-top: 1rem !important; padding-bottom: 1rem !important; }
+        .py-4 { padding-top: 1.5rem !important; padding-bottom: 1.5rem !important; }
+        .py-5 { padding-top: 3rem !important; padding-bottom: 3rem !important; }
+        
+        .px-0 { padding-left: 0 !important; padding-right: 0 !important; }
+        .px-1 { padding-left: 0.25rem !important; padding-right: 0.25rem !important; }
+        .px-2 { padding-left: 0.5rem !important; padding-right: 0.5rem !important; }
+        .px-3 { padding-left: 1rem !important; padding-right: 1rem !important; }
+        .px-4 { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
+        .px-5 { padding-left: 3rem !important; padding-right: 3rem !important; }
+        
+        /* Header & Navigation */
+        .header {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: var(--transition);
+        }
+        
+        .header.scrolled {
+            padding: 10px 0;
+            background-color: rgba(27, 110, 242, 0.95);
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background-color: var(--white);
+            color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        
+        .logo h1 {
+            font-size: 1.6rem;
+            margin: 0;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+        
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            padding: 8px 0;
+            position: relative;
+            transition: var(--transition);
+        }
+        
+        .nav-links a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: var(--white);
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+        
+        .nav-links a.active:after {
+            width: 100%;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.5rem;
+        }
+        
+        /* Page Header */
+        .page-header {
+            padding: 180px 0 100px;
+            text-align: center;
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/IMG-20250422-WA0005.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--white);
+            position: relative;
+        }
+        
+        .page-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .page-header p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto;
+            animation: fadeInUp 1s ease 0.2s;
+            animation-fill-mode: both;
+        }
+        
+        /* Breadcrumb */
+        .breadcrumb {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 10px;
+        }
+        
+        .breadcrumb a {
+            color: var(--white);
+            text-decoration: none;
+            opacity: 0.8;
+            transition: var(--transition);
+        }
+        
+        .breadcrumb a:hover {
+            opacity: 1;
+        }
+        
+        .breadcrumb span {
+            opacity: 0.5;
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: var(--white);
+            padding: 12px 30px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0 10px 10px;
+            transition: var(--transition);
+            border: 2px solid transparent;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: var(--secondary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        .btn-sm {
+            padding: 8px 20px;
+            font-size: 0.85rem;
+        }
+        
+        /* Sections */
+        .section {
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            display: inline-block;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .section-title p {
+            color: var(--gray);
+            max-width: 700px;
+            margin: 20px auto 0;
+        }
+        
+        /* Application Form */
+        .application-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--white);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .form-progress {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .form-progress:before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #e9ecef;
+            z-index: 1;
+        }
+        
+        .progress-bar {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            height: 2px;
+            background-color: var(--primary);
+            z-index: 2;
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+        
+        .progress-step {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            width: 25%;
+        }
+        
+        .step-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #e9ecef;
+            color: var(--gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 10px;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        
+        .step-title {
+            font-size: 0.9rem;
+            color: var(--gray);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        .progress-step.active .step-circle {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+        
+        .progress-step.active .step-title {
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        .progress-step.completed .step-circle {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+        
+        .progress-step.completed .step-circle:after {
+            content: '✓';
+        }
+        
+        .form-step {
+            display: none;
+        }
+        
+        .form-step.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .step-title-bar {
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .step-title-bar h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .step-title-bar p {
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+        
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--dark);
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+            font-family: inherit;
+            font-size: 1rem;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(4, 99, 7, 0.2);
+        }
+        
+        textarea.form-control {
+            height: 120px;
+            resize: vertical;
+        }
+        
+        .form-check {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .form-check-input {
+            margin-top: 5px;
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+        }
+        
+        .form-check-label {
+            font-size: 0.95rem;
+            color: var(--gray);
+        }
+        
+        .form-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        
+        .save-application {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        
+        .btn-save {
+            background-color: transparent;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+            padding: 8px 15px;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .btn-save:hover {
+            background-color: var(--primary-light);
+            transform: translateY(-3px);
+        }
+        
+        .btn-prev {
+            background-color: #e9ecef;
+            color: var(--dark);
+        }
+        
+        .btn-prev:hover {
+            background-color: #dee2e6;
+        }
+        
+        .full-width {
+            grid-column: span 2;
+        }
+        
+        /* Form validation */
+        .invalid-feedback {
+            display: none;
+            color: var(--secondary-dark);
+            font-size: 0.85rem;
+            margin-top: 5px;
+        }
+        
+        .form-control.is-invalid {
+            border-color: var(--secondary-dark);
+        }
+        
+        .form-control.is-invalid + .invalid-feedback {
+            display: block;
+        }
+        
+        /* Form success message */
+        .success-message {
+            text-align: center;
+            padding: 40px;
+            display: none;
+        }
+        
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            background-color: var(--primary-light);
+            color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            margin: 0 auto 20px;
+        }
+        
+        .success-title {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .success-text {
+            color: var(--gray);
+            margin-bottom: 30px;
+        }
+        
+        /* Application instructions card */
+        .instructions-card {
+            background-color: var(--primary-light);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            margin-bottom: 40px;
+        }
+        
+        .instructions-icon {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        
+        .instructions-title {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .instructions-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .instructions-list li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 10px;
+        }
+        
+        .instructions-list li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+        
+        /* Toast notification */
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--white);
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius);
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+        }
+        
+        .toast.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .toast-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: var(--primary-light);
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .toast-content {
+            flex-grow: 1;
+        }
+        
+        .toast-title {
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 5px;
+        }
+        
+        .toast-text {
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+        
+        .toast-close {
+            background: none;
+            border: none;
+            color: var(--gray);
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+        
+        .toast-close:hover {
+            color: var(--dark);
+        }
+        
+        /* Upload button */
+        .file-upload {
+            position: relative;
+        }
+        
+        .file-upload input[type="file"] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+        }
+        
+        .upload-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 20px;
+            background-color: #f8f9fa;
+            border: 1px dashed #ddd;
+            border-radius: var(--border-radius);
+            color: var(--gray);
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .upload-btn:hover {
+            background-color: #f1f3f5;
+            border-color: #c4c4c4;
+        }
+        
+        .upload-btn i {
+            font-size: 1.2rem;
+        }
+        
+        .file-name {
+            font-size: 0.9rem;
+            color: var(--gray);
+            margin-top: 5px;
+            display: none;
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 70px 0 20px;
+            position: relative;
+        }
+        
+        .footer:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 10px;
+            background: linear-gradient(90deg, var(--secondary) 0%, var(--primary) 50%, var(--secondary) 100%);
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+        }
+        
+        .footer-column h3 {
+            margin-top: 0;
+            margin-bottom: 25px;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 10px;
+            display: inline-block;
+            font-size: 1.5rem;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .footer-column ul li:before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+        }
+        
+        .footer-column a {
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-column a:hover {
+            color: var(--secondary-light);
+            padding-left: 5px;
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        /* Social icons */
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.1);
+            color: var(--white);
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--secondary);
+            transform: translateY(-5px);
+        }
+        
+        /* Newsletter subscription */
+        .newsletter-form {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .newsletter-form input {
+            flex-grow: 1;
+            padding: 12px 15px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: var(--border-radius);
+            color: var(--white);
+            font-family: inherit;
+        }
+        
+        .newsletter-form input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .newsletter-form input:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-color: var(--white);
+        }
+        
+        .newsletter-form button {
+            background-color: var(--secondary);
+            color: var(--white);
+            border: none;
+            padding: 0 20px;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 600;
+        }
+        
+        .newsletter-form button:hover {
+            background-color: var(--secondary-dark);
+        }
+        
+        /* Back to top button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 99;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--secondary);
+            transform: translateY(-5px);
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .fadeIn { animation: fadeIn 1s ease both; }
+        .fadeInUp { animation: fadeInUp 1s ease both; }
+        .slideInLeft { animation: slideInLeft 1s ease both; }
+        .slideInRight { animation: slideInRight 1s ease both; }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 992px) {
+            .page-header h1 {
+                font-size: 2.8rem;
+            }
+            
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .full-width {
+                grid-column: span 1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                padding: 10px 0;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background-color: var(--primary);
+                flex-direction: column;
+                gap: 0;
+                height: 0;
+                overflow: hidden;
+                transition: height 0.3s ease;
+                z-index: 1000;
+            }
+            
+            .nav-links.active {
+                height: auto;
+                padding: 20px 0;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            }
+            
+            .nav-links a {
+                display: block;
+                padding: 12px 20px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            
+            .nav-links a:after {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .page-header {
+                padding: 140px 0 70px;
+            }
+            
+            .page-header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .section {
+                padding: 60px 0;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .application-container {
+                padding: 20px;
+            }
+            
+            .form-progress {
+                flex-direction: column;
+                gap: 15px;
+                align-items: flex-start;
+            }
+            
+            .form-progress:before {
+                display: none;
+            }
+            
+            .progress-step {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+            
+            .step-circle {
+                margin: 0;
+            }
+            
+            .step-title {
+                margin-bottom: 0;
+            }
+        }
+        
+        /* Toast notification */
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #fff;
+            color: #333;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 6px;
+            padding: 15px;
+            display: flex;
+            align-items: flex-start;
+            max-width: 350px;
+            transform: translateY(100px);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            border-left: 4px solid #4CAF50;
+        }
+        
+        .toast.show {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .toast-icon {
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .toast-content {
+            flex: 1;
+        }
+        
+        .toast-title {
+            font-weight: 700;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+        
+        .toast-text {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.4;
+        }
+        
+        .toast-close {
+            background: none;
+            border: none;
+            color: #999;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 5px;
+            margin-left: 5px;
+            align-self: flex-start;
+            transition: color 0.2s;
+        }
+        
+        .toast-close:hover {
+            color: #333;
+        }
+        
+        /* Print Styles */
+        @media print {
+            body {
+                background-color: white;
+                color: black;
+                font-size: 12pt;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .header, .footer, .back-to-top, .mobile-menu-btn, 
+            .newsletter-form, .toast, .social-icons {
+                display: none !important;
+            }
+            
+            .container {
+                width: 100%;
+                max-width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+            
+            .application-container {
+                border: none;
+                box-shadow: none;
+                padding: 0;
+            }
+            
+            .page-break {
+                page-break-before: always;
+            }
+            
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            
+            .logo {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            
+            /* Special styles for the printable application view */
+            .print-header {
+                text-align: center;
+                border-bottom: 1px solid #000;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+            }
+            
+            .section {
+                margin-bottom: 15px;
+            }
+            
+            .section-title {
+                font-weight: bold;
+                border-bottom: 1px solid #ddd;
+                padding-bottom: 5px;
+                margin-bottom: 10px;
+            }
+            
+            .field {
+                margin-bottom: 5px;
+            }
+            
+            .field-label {
+                font-weight: bold;
+                display: inline-block;
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Back to Top Button -->
+    <a href="#" id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-icon">
+            <i class="fas fa-check"></i>
+        </div>
+        <div class="toast-content">
+            <div class="toast-title">Success</div>
+            <div class="toast-text">Your information has been saved.</div>
+        </div>
+        <button class="toast-close" onclick="closeToast()">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <div class="logo-icon">M</div>
+                    <h1>MAYUGE LIGHT SS</h1>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="academics.html">Academics</a>
+                    <a href="admissions.html">Admissions</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="news.html">News</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="donate.html">Donate</a>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Online Application</h1>
+            <p>Begin your journey with Mayuge Light Secondary School by completing our online application form</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <a href="admissions.html">Admissions</a>
+                <span>/</span>
+                <a href="apply-now.html" class="active">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Student Application Form</h2>
+                <p>Please complete all required fields in this application form. Your application will be reviewed by our admissions team.</p>
+            </div>
+            
+            <div class="instructions-card" data-aos="fade-up">
+                <div class="instructions-icon">
+                    <i class="fas fa-info-circle"></i>
+                </div>
+                <h3 class="instructions-title">Application Instructions</h3>
+                <ul class="instructions-list">
+                    <li>Complete all sections of the application form accurately.</li>
+                    <li>Have copies of previous academic records ready to upload.</li>
+                    <li>Include parent/guardian contact information.</li>
+                    <li>Submit your application fee payment receipt (50,000 UGX).</li>
+                    <li>After submission, you will receive an email confirmation with your application reference number.</li>
+                    <li>Our admissions team will contact you within 5 working days regarding the next steps.</li>
+                </ul>
+            </div>
+            
+            <div class="application-container" data-aos="fade-up">
+                <div class="form-progress">
+                    <div class="progress-bar" id="progressBar"></div>
+                    <div class="progress-step active" data-step="1">
+                        <div class="step-circle">1</div>
+                        <div class="step-title">Personal Information</div>
+                    </div>
+                    <div class="progress-step" data-step="2">
+                        <div class="step-circle">2</div>
+                        <div class="step-title">Academic Background</div>
+                    </div>
+                    <div class="progress-step" data-step="3">
+                        <div class="step-circle">3</div>
+                        <div class="step-title">Parent/Guardian Details</div>
+                    </div>
+                    <div class="progress-step" data-step="4">
+                        <div class="step-circle">4</div>
+                        <div class="step-title">Review & Submit</div>
+                    </div>
+                </div>
+                
+                <form id="applicationForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+                    <!-- Step 1: Personal Information -->
+                    <div class="form-step active" id="step1">
+                        <div class="step-title-bar">
+                            <h3>Personal Information</h3>
+                            <p>Please provide your personal details</p>
+                        </div>
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="firstName">First Name <span class="text-secondary">*</span></label>
+                                <input type="text" id="firstName" name="firstName" class="form-control" required>
+                                <div class="invalid-feedback">Please enter your first name</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lastName">Last Name <span class="text-secondary">*</span></label>
+                                <input type="text" id="lastName" name="lastName" class="form-control" required>
+                                <div class="invalid-feedback">Please enter your last name</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="dob">Date of Birth <span class="text-secondary">*</span></label>
+                                <input type="date" id="dob" name="dob" class="form-control" required>
+                                <div class="invalid-feedback">Please enter your date of birth</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="gender">Gender <span class="text-secondary">*</span></label>
+                                <select id="gender" name="gender" class="form-control" required>
+                                    <option value="">Select gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="invalid-feedback">Please select your gender</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="nationality">Nationality <span class="text-secondary">*</span></label>
+                                <input type="text" id="nationality" name="nationality" class="form-control" required>
+                                <div class="invalid-feedback">Please enter your nationality</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="religion">Religion</label>
+                                <input type="text" id="religion" name="religion" class="form-control">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-control">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="text-secondary">*</span></label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                                <div class="invalid-feedback">Please enter a valid email address</div>
+                            </div>
+                            
+                            <div class="form-group full-width">
+                                <label for="address">Residential Address <span class="text-secondary">*</span></label>
+                                <textarea id="address" name="address" class="form-control" required></textarea>
+                                <div class="invalid-feedback">Please enter your address</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="disabilities">Any Disabilities or Special Needs</label>
+                                <textarea id="disabilities" name="disabilities" class="form-control" placeholder="If yes, please specify"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="photo">Student Passport Photo</label>
+                                <div class="file-upload">
+                                    <div class="upload-btn">
+                                        <i class="fas fa-upload"></i>
+                                        <span>Choose a file</span>
+                                    </div>
+                                    <input type="file" id="photo" name="photo" accept="image/*">
+                                    <div class="file-name" id="photoName"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-buttons">
+                            <button type="button" class="btn btn-primary btn-next" data-next="2">Next Step</button>
+                        </div>
+                        <div class="save-application">
+                            <button type="button" class="btn btn-save" id="saveApplication">
+                                <i class="fas fa-save"></i> Save Application Progress
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2: Academic Background -->
+                    <div class="form-step" id="step2">
+                        <div class="step-title-bar">
+                            <h3>Academic Background</h3>
+                            <p>Tell us about your educational history</p>
+                        </div>
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="previousSchool">Previous School <span class="text-secondary">*</span></label>
+                                <input type="text" id="previousSchool" name="previousSchool" class="form-control" required>
+                                <div class="invalid-feedback">Please enter your previous school</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="yearAttended">Years Attended <span class="text-secondary">*</span></label>
+                                <input type="text" id="yearAttended" name="yearAttended" class="form-control" placeholder="e.g. 2020-2023" required>
+                                <div class="invalid-feedback">Please enter years attended</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="gradePassed">Last Grade Completed <span class="text-secondary">*</span></label>
+                                <select id="gradePassed" name="gradePassed" class="form-control" required>
+                                    <option value="">Select grade</option>
+                                    <option value="P7">Primary 7</option>
+                                    <option value="S1">Senior 1</option>
+                                    <option value="S2">Senior 2</option>
+                                    <option value="S3">Senior 3</option>
+                                    <option value="S4">Senior 4</option>
+                                    <option value="S5">Senior 5</option>
+                                    <option value="S6">Senior 6</option>
+                                </select>
+                                <div class="invalid-feedback">Please select last grade completed</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="applyingFor">Applying For <span class="text-secondary">*</span></label>
+                                <select id="applyingFor" name="applyingFor" class="form-control" required>
+                                    <option value="">Select grade</option>
+                                    <option value="S1">Senior 1 (O-Level)</option>
+                                    <option value="S2">Senior 2 (O-Level)</option>
+                                    <option value="S3">Senior 3 (O-Level)</option>
+                                    <option value="S4">Senior 4 (O-Level)</option>
+                                    <option value="S5">Senior 5 (A-Level)</option>
+                                    <option value="S6">Senior 6 (A-Level)</option>
+                                </select>
+                                <div class="invalid-feedback">Please select grade applying for</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="boardingStatus">Boarding Status <span class="text-secondary">*</span></label>
+                                <select id="boardingStatus" name="boardingStatus" class="form-control" required>
+                                    <option value="">Select status</option>
+                                    <option value="day">Day Scholar</option>
+                                    <option value="boarding">Boarding Student</option>
+                                </select>
+                                <div class="invalid-feedback">Please select boarding status</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="term">Term Applying For <span class="text-secondary">*</span></label>
+                                <select id="term" name="term" class="form-control" required>
+                                    <option value="">Select term</option>
+                                    <option value="term1">Term 1</option>
+                                    <option value="term2">Term 2</option>
+                                    <option value="term3">Term 3</option>
+                                </select>
+                                <div class="invalid-feedback">Please select term</div>
+                            </div>
+                            
+                            <div class="form-group full-width">
+                                <label for="achievements">Achievements/Awards (if any)</label>
+                                <textarea id="achievements" name="achievements" class="form-control"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="transcript">Previous School Report Cards/Transcripts</label>
+                                <div class="file-upload">
+                                    <div class="upload-btn">
+                                        <i class="fas fa-upload"></i>
+                                        <span>Choose a file</span>
+                                    </div>
+                                    <input type="file" id="transcript" name="transcript" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png">
+                                    <div class="file-name" id="transcriptName"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="pleResults">PLE Results (For S1 Applicants)</label>
+                                <div class="file-upload">
+                                    <div class="upload-btn">
+                                        <i class="fas fa-upload"></i>
+                                        <span>Choose a file</span>
+                                    </div>
+                                    <input type="file" id="pleResults" name="pleResults" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png">
+                                    <div class="file-name" id="pleResultsName"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-buttons">
+                            <button type="button" class="btn btn-prev" data-prev="1">Previous</button>
+                            <button type="button" class="btn btn-primary btn-next" data-next="3">Next Step</button>
+                        </div>
+                        <div class="save-application">
+                            <button type="button" class="btn btn-save" id="saveApplication2">
+                                <i class="fas fa-save"></i> Save Application Progress
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3: Parent/Guardian Details -->
+                    <div class="form-step" id="step3">
+                        <div class="step-title-bar">
+                            <h3>Parent/Guardian Details</h3>
+                            <p>Provide information about your parent or guardian</p>
+                        </div>
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="guardianName">Parent/Guardian Full Name <span class="text-secondary">*</span></label>
+                                <input type="text" id="guardianName" name="guardianName" class="form-control" required>
+                                <div class="invalid-feedback">Please enter parent/guardian name</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="relationship">Relationship to Applicant <span class="text-secondary">*</span></label>
+                                <select id="relationship" name="relationship" class="form-control" required>
+                                    <option value="">Select relationship</option>
+                                    <option value="father">Father</option>
+                                    <option value="mother">Mother</option>
+                                    <option value="guardian">Legal Guardian</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="invalid-feedback">Please select relationship</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="guardianPhone">Phone Number <span class="text-secondary">*</span></label>
+                                <input type="tel" id="guardianPhone" name="guardianPhone" class="form-control" required>
+                                <div class="invalid-feedback">Please enter phone number</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="guardianAltPhone">Alternative Phone Number</label>
+                                <input type="tel" id="guardianAltPhone" name="guardianAltPhone" class="form-control">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="guardianEmail">Email Address <span class="text-secondary">*</span></label>
+                                <input type="email" id="guardianEmail" name="guardianEmail" class="form-control" required>
+                                <div class="invalid-feedback">Please enter a valid email address</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="occupation">Occupation</label>
+                                <input type="text" id="occupation" name="occupation" class="form-control">
+                            </div>
+                            
+                            <div class="form-group full-width">
+                                <label for="guardianAddress">Residential Address <span class="text-secondary">*</span></label>
+                                <textarea id="guardianAddress" name="guardianAddress" class="form-control" required></textarea>
+                                <div class="invalid-feedback">Please enter address</div>
+                            </div>
+                            
+                            <div class="form-group full-width">
+                                <label>Emergency Contact (if different from above)</label>
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label for="emergencyName">Contact Name</label>
+                                        <input type="text" id="emergencyName" name="emergencyName" class="form-control">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="emergencyPhone">Contact Phone</label>
+                                        <input type="tel" id="emergencyPhone" name="emergencyPhone" class="form-control">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="emergencyRelationship">Relationship</label>
+                                        <input type="text" id="emergencyRelationship" name="emergencyRelationship" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-buttons">
+                            <button type="button" class="btn btn-prev" data-prev="2">Previous</button>
+                            <button type="button" class="btn btn-primary btn-next" data-next="4">Next Step</button>
+                        </div>
+                        <div class="save-application">
+                            <button type="button" class="btn btn-save" id="saveApplication3">
+                                <i class="fas fa-save"></i> Save Application Progress
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4: Review & Submit -->
+                    <div class="form-step" id="step4">
+                        <div class="step-title-bar">
+                            <h3>Review & Submit</h3>
+                            <p>Please review your application details before submission</p>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="applicationFee">Application Fee Payment Receipt</label>
+                            <div class="file-upload">
+                                <div class="upload-btn">
+                                    <i class="fas fa-upload"></i>
+                                    <span>Choose a file</span>
+                                </div>
+                                <input type="file" id="applicationFee" name="applicationFee" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png">
+                                <div class="file-name" id="applicationFeeName"></div>
+                            </div>
+                            <small class="text-gray">Upload proof of payment of the application fee (50,000 UGX). Payment can be made via Mobile Money to: +256750224121</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input type="checkbox" id="agreement" name="agreement" class="form-check-input" required>
+                                <label for="agreement" class="form-check-label">
+                                    I certify that all information provided in this application is true and correct to the best of my knowledge. I understand that any false or misleading information may result in the rejection of my application or dismissal from the school.
+                                </label>
+                            </div>
+                            <div class="invalid-feedback">You must agree to the terms</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input type="checkbox" id="rulesAgreement" name="rulesAgreement" class="form-check-input" required>
+                                <label for="rulesAgreement" class="form-check-label">
+                                    I agree to abide by all the rules and regulations of Mayuge Light Secondary School if admitted.
+                                </label>
+                            </div>
+                            <div class="invalid-feedback">You must agree to the school rules</div>
+                        </div>
+                        
+                        <div class="form-buttons">
+                            <button type="button" class="btn btn-prev" data-prev="3">Previous</button>
+                            <button type="submit" class="btn btn-primary">Submit Application</button>
+                            <button type="button" class="btn btn-secondary" id="printApplication">
+                                <i class="fas fa-print"></i> Print Application
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                
+                <!-- Success Message -->
+                <div class="success-message" id="successMessage">
+                    <div class="success-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <h2 class="success-title">Application Submitted Successfully!</h2>
+                    <p class="success-text">Thank you for applying to Mayuge Light Secondary School. Your application has been received and is being processed. You will receive a confirmation email shortly with further instructions.</p>
+                    <a href="index.html" class="btn btn-primary">Return to Homepage</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p class="mb-4">Mayuge Light Secondary School is a premier educational institution committed to providing quality education and nurturing well-rounded individuals since 2009.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="news.html">News & Events</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="donate.html">Support Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>P.O. Box 124, Mayuge, Uganda</li>
+                        <li>Phone: +256751018625 / +256750224121</li>
+                        <li>Mobile: +256782616387</li>
+                        <li>Email: info@mayugelightss.ac.ug</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p class="mb-3">Subscribe to our newsletter to receive updates on school events, news, and announcements.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Mayuge Light Secondary School. All Rights Reserved. | Designed with ❤️ for quality education</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script>
+        // Initialize AOS animations
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease',
+                once: true,
+                offset: 50
+            });
+            
+            // Mobile menu toggle
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navLinks = document.getElementById('navLinks');
+            
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                    
+                    // Toggle menu icon
+                    const icon = mobileMenuBtn.querySelector('i');
+                    if (icon.classList.contains('fa-bars')) {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-times');
+                    } else {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+            }
+            
+            // Header scroll effect
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('.header');
+                if (window.scrollY > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+                
+                // Back to top button visibility
+                const backToTop = document.getElementById('backToTop');
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('active');
+                } else {
+                    backToTop.classList.remove('active');
+                }
+            });
+            
+            // Back to top functionality
+            document.getElementById('backToTop').addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Multi-step form
+            const nextButtons = document.querySelectorAll('.btn-next');
+            const prevButtons = document.querySelectorAll('.btn-prev');
+            const progressSteps = document.querySelectorAll('.progress-step');
+            const formSteps = document.querySelectorAll('.form-step');
+            
+            // Next step buttons
+            nextButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const currentStep = parseInt(button.getAttribute('data-next')) - 1;
+                    const nextStep = parseInt(button.getAttribute('data-next'));
+                    
+                    // Validate current step
+                    if (validateStep(currentStep)) {
+                        // Update progress steps
+                        progressSteps.forEach(step => {
+                            const stepNum = parseInt(step.getAttribute('data-step'));
+                            
+                            if (stepNum === currentStep) {
+                                step.classList.add('completed');
+                                step.classList.remove('active');
+                            }
+                            
+                            if (stepNum === nextStep) {
+                                step.classList.add('active');
+                            }
+                        });
+                        
+                        // Show next step
+                        formSteps.forEach(step => {
+                            step.classList.remove('active');
+                        });
+                        
+                        document.getElementById(`step${nextStep}`).classList.add('active');
+                        
+                        // Show success toast
+                        showToast('Information Saved', 'Your information has been saved successfully.');
+                        
+                        // Scroll to top of form
+                        document.querySelector('.application-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+            
+            // Previous step buttons
+            prevButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const prevStep = parseInt(button.getAttribute('data-prev'));
+                    const currentStep = prevStep + 1;
+                    
+                    // Update progress steps
+                    progressSteps.forEach(step => {
+                        const stepNum = parseInt(step.getAttribute('data-step'));
+                        
+                        if (stepNum === currentStep) {
+                            step.classList.remove('active');
+                        }
+                        
+                        if (stepNum === prevStep) {
+                            step.classList.add('active');
+                            step.classList.remove('completed');
+                        }
+                    });
+                    
+                    // Show previous step
+                    formSteps.forEach(step => {
+                        step.classList.remove('active');
+                    });
+                    
+                    document.getElementById(`step${prevStep}`).classList.add('active');
+                    
+                    // Scroll to top of form
+                    document.querySelector('.application-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                });
+            });
+            
+            // Form validation
+            function validateStep(stepNumber) {
+                const step = document.getElementById(`step${stepNumber + 1}`);
+                const inputs = step.querySelectorAll('input[required], select[required], textarea[required]');
+                let isValid = true;
+                
+                inputs.forEach(input => {
+                    if (!input.value.trim()) {
+                        input.classList.add('is-invalid');
+                        isValid = false;
+                    } else {
+                        input.classList.remove('is-invalid');
+                    }
+                    
+                    // Email validation
+                    if (input.type === 'email' && input.value.trim()) {
+                        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                        if (!emailPattern.test(input.value)) {
+                            input.classList.add('is-invalid');
+                            isValid = false;
+                        }
+                    }
+                });
+                
+                return isValid;
+            }
+            
+            // File upload handling
+            const fileInputs = document.querySelectorAll('input[type="file"]');
+            
+            fileInputs.forEach(input => {
+                input.addEventListener('change', (e) => {
+                    const fileName = e.target.files[0]?.name || '';
+                    const fileNameElement = document.getElementById(`${input.id}Name`);
+                    
+                    if (fileName) {
+                        fileNameElement.textContent = fileName;
+                        fileNameElement.style.display = 'block';
+                    } else {
+                        fileNameElement.style.display = 'none';
+                    }
+                });
+            });
+            
+            // Save application data
+            function saveApplicationData() {
+                const formData = {};
+                const formElements = applicationForm.elements;
+                
+                for (let i = 0; i < formElements.length; i++) {
+                    const element = formElements[i];
+                    
+                    // Skip buttons, file inputs, and checkboxes
+                    if (element.type !== 'button' && element.type !== 'submit' && element.type !== 'file') {
+                        if (element.type === 'checkbox') {
+                            formData[element.name] = element.checked;
+                        } else {
+                            formData[element.name] = element.value;
+                        }
+                    }
+                }
+                
+                // Save to localStorage
+                localStorage.setItem('mlss_application_data', JSON.stringify(formData));
+                
+                // Show toast notification
+                showToast('Application Saved', 'Your application has been saved. You can return later to complete it.');
+                
+                // Update progress bar
+                updateProgressBar();
+            }
+            
+            // Load saved application data
+            function loadApplicationData() {
+                const savedData = localStorage.getItem('mlss_application_data');
+                
+                if (savedData) {
+                    const formData = JSON.parse(savedData);
+                    const formElements = applicationForm.elements;
+                    
+                    for (let i = 0; i < formElements.length; i++) {
+                        const element = formElements[i];
+                        
+                        if (formData[element.name] !== undefined) {
+                            if (element.type === 'checkbox') {
+                                element.checked = formData[element.name];
+                            } else {
+                                element.value = formData[element.name];
+                            }
+                        }
+                    }
+                    
+                    // Show toast notification
+                    showToast('Application Loaded', 'Your previously saved application data has been loaded.');
+                    
+                    // Update progress bar
+                    updateProgressBar();
+                }
+            }
+            
+            // Update progress bar
+            function updateProgressBar() {
+                const totalFields = applicationForm.querySelectorAll('input:not([type="button"]):not([type="submit"]):not([type="file"]), select, textarea').length;
+                const filledFields = Array.from(applicationForm.querySelectorAll('input:not([type="button"]):not([type="submit"]):not([type="file"]), select, textarea'))
+                    .filter(field => field.value.trim() !== '').length;
+                
+                const progressPercentage = (filledFields / totalFields) * 100;
+                document.getElementById('progressBar').style.width = `${progressPercentage}%`;
+            }
+            
+            // Add event listeners to save buttons
+            document.getElementById('saveApplication').addEventListener('click', saveApplicationData);
+            document.getElementById('saveApplication2').addEventListener('click', saveApplicationData);
+            document.getElementById('saveApplication3').addEventListener('click', saveApplicationData);
+            
+            // Add event listener to print button
+            document.getElementById('printApplication').addEventListener('click', generatePrintableApplication);
+            
+            // Function to generate printable application
+            function generatePrintableApplication() {
+                // Validate all form steps before printing
+                let isValid = true;
+                for (let i = 1; i <= 4; i++) {
+                    if (!validateStep(i-1)) {
+                        showToast('Form Incomplete', 'Please complete all required fields before printing.');
+                        isValid = false;
+                        break;
+                    }
+                }
+                
+                if (!isValid) return;
+                
+                // Get all form data
+                const formData = {};
+                const formElements = applicationForm.elements;
+                
+                for (let i = 0; i < formElements.length; i++) {
+                    const element = formElements[i];
+                    
+                    if (element.name && element.type !== 'file' && element.type !== 'button' && element.type !== 'submit') {
+                        if (element.type === 'checkbox') {
+                            formData[element.name] = element.checked ? 'Yes' : 'No';
+                        } else if (element.type === 'select-one' && element.options[element.selectedIndex]) {
+                            formData[element.name] = element.options[element.selectedIndex].text;
+                        } else {
+                            formData[element.name] = element.value;
+                        }
+                    }
+                }
+                
+                // Create a new window for printing
+                const printWindow = window.open('', '_blank');
+                
+                // Create the print content with school branding
+                printWindow.document.write(`
+                    <!DOCTYPE html>
+                    <html>
+                    <head>
+                        <title>Mayuge Light Secondary School - Application Form</title>
+                        <style>
+                            body {
+                                font-family: Arial, sans-serif;
+                                line-height: 1.6;
+                                color: #333;
+                                padding: 20px;
+                            }
+                            .print-header {
+                                text-align: center;
+                                margin-bottom: 30px;
+                                border-bottom: 2px solid #006400;
+                                padding-bottom: 20px;
+                            }
+                            .school-name {
+                                font-size: 24px;
+                                font-weight: bold;
+                                color: #006400;
+                                margin: 0;
+                            }
+                            .application-title {
+                                font-size: 20px;
+                                margin: 10px 0;
+                            }
+                            .school-address {
+                                font-size: 14px;
+                                margin: 5px 0;
+                            }
+                            .section {
+                                margin-bottom: 20px;
+                            }
+                            .section-title {
+                                font-size: 18px;
+                                font-weight: bold;
+                                margin-bottom: 10px;
+                                background-color: #f1f1f1;
+                                padding: 5px;
+                            }
+                            .field {
+                                margin-bottom: 10px;
+                            }
+                            .field-label {
+                                font-weight: bold;
+                                display: inline-block;
+                                width: 200px;
+                                vertical-align: top;
+                            }
+                            .field-value {
+                                display: inline-block;
+                                max-width: 400px;
+                            }
+                            .signature-section {
+                                margin-top: 50px;
+                            }
+                            .signature-line {
+                                border-top: 1px solid #000;
+                                width: 200px;
+                                margin-top: 70px;
+                                display: inline-block;
+                            }
+                            .signature-container {
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                            .reference-number {
+                                font-size: 14px;
+                                color: #333;
+                                margin-top: 10px;
+                                text-align: right;
+                            }
+                            .logo-placeholder {
+                                width: 60px;
+                                height: 60px;
+                                background-color: #006400;
+                                color: white;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                font-size: 24px;
+                                font-weight: bold;
+                                margin: 0 auto 10px;
+                            }
+                            .application-info {
+                                margin-top: 10px;
+                                font-size: 12px;
+                                color: #666;
+                            }
+                            .footer {
+                                margin-top: 50px;
+                                text-align: center;
+                                font-size: 12px;
+                                color: #666;
+                                border-top: 1px solid #ddd;
+                                padding-top: 20px;
+                            }
+                            @media print {
+                                .no-print {
+                                    display: none;
+                                }
+                            }
+                        </style>
+                    </head>
+                    <body>
+                        <div class="print-header">
+                            <div class="logo-placeholder">M</div>
+                            <h1 class="school-name">MAYUGE LIGHT SECONDARY SCHOOL</h1>
+                            <h2 class="application-title">Student Application Form</h2>
+                            <p class="school-address">P.O. Box 124, Mayuge, Uganda | Tel: +256751018625 / +256782616387</p>
+                            <p class="application-info">Application Date: ${new Date().toLocaleDateString()}</p>
+                        </div>
+                        
+                        <div class="section">
+                            <h3 class="section-title">1. Personal Information</h3>
+                            <div class="field">
+                                <span class="field-label">Full Name:</span>
+                                <span class="field-value">${formData.firstName} ${formData.lastName}</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label">Date of Birth:</span>
+                                <span class="field-value">${formData.dob}</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label">Gender:</span>
+                                <span class="field-value">${formData.gender}</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label">Nationality:</span>
+                                <span class="field-value">${formData.nationality}</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label">Religion:</span>
+                                <span class="field-value">${formData.religion || 'Not specified'}</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label">Phone Number:</span>
+                                <span class="field-value">${formData.phone || 'Not provided'}</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label">Email Address:</span>
+                                <span class="field-value">${formData.email}</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label">Residential Address:</span>
+                                <span class="field-value">${formData.address}</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label">Disabilities/Special Needs:</span>
+                                <span class="field-value">${formData.disabilities || 'None'}</span>
+                            </div>
+                        </div>
+                        
+                        <div class="section">
+                            <h3 class="section-title">2. Academic Background</h3>
+                            <div class="field">
+                                <span class="field-label">Previous School:</span>
+                                <span class="field-value">${formData.previousSchool}</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label">Years Attended:</span>
+                                <span class="field-value">${formData.yearAttended}</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label">Last Grade Completed:</span>
+                                <span class="field-value">${formData.gradePassed}</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label">Grades/Marks Obtained:</span>
+                                <span class="field-value">${formData.grades}</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label">Applying For Grade:</span>
+                                <span class="field-value">${formData.applyingFor}</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label">Preferred Term:</span>
+                                <span class="field-value">${formData.preferredTerm}</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label">Boarding Option:</span>
+                                <span class="field-value">${formData.boardingOption}</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label">Transportation Need:</span>
+                                <span class="field-value">${formData.transportation}</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label">Extracurricular Interests:</span>
+                                <span class="field-value">${formData.extracurricular || 'None specified'}</span>
+                            </div>
+                        </div>
+                        
+                        <div class="section">
+                            <h3 class="section-title">3. Parent/Guardian Information</h3>
+                            <div class="field">
+                                <span class="field-label">Parent/Guardian Name:</span>
+                                <span class="field-value">${formData.parentName}</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label">Relationship:</span>
+                                <span class="field-value">${formData.relationship}</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label">Occupation:</span>
+                                <span class="field-value">${formData.occupation}</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label">Phone Number:</span>
+                                <span class="field-value">${formData.parentPhone}</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label">Email Address:</span>
+                                <span class="field-value">${formData.parentEmail || 'Not provided'}</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label">Postal Address:</span>
+                                <span class="field-value">${formData.postalAddress}</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label">Emergency Contact:</span>
+                                <span class="field-value">${formData.emergencyContact}</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label">Emergency Contact Relationship:</span>
+                                <span class="field-value">${formData.emergencyRelationship}</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label">Emergency Contact Phone:</span>
+                                <span class="field-value">${formData.emergencyPhone}</span>
+                            </div>
+                        </div>
+                        
+                        <div class="section">
+                            <h3 class="section-title">4. Declarations</h3>
+                            <div class="field">
+                                <span class="field-label">Information Accuracy:</span>
+                                <span class="field-value">${formData.accurateInfo}</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label">Financial Responsibility:</span>
+                                <span class="field-value">${formData.financialResponsibility}</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label">Rules Agreement:</span>
+                                <span class="field-value">${formData.rulesAgreement}</span>
+                            </div>
+                        </div>
+                        
+                        <div class="signature-section">
+                            <div class="signature-container">
+                                <div>
+                                    <div class="signature-line"></div>
+                                    <p>Applicant's Signature</p>
+                                </div>
+                                <div>
+                                    <div class="signature-line"></div>
+                                    <p>Parent/Guardian's Signature</p>
+                                </div>
+                                <div>
+                                    <div class="signature-line"></div>
+                                    <p>Date</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="reference-number">
+                            <strong>Application Reference:</strong> MLSS-${Date.now().toString().substring(6)}
+                        </div>
+                        
+                        <div class="footer">
+                            <p>This document is an official application to Mayuge Light Secondary School.</p>
+                            <p>For any inquiries, please contact our admissions office at +256751018625 or info@mayugelightss.ac.ug</p>
+                        </div>
+                        
+                        <div class="no-print" style="margin-top: 30px; text-align: center;">
+                            <button onclick="window.print()" style="padding: 10px 20px; background-color: #006400; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">
+                                Print Application
+                            </button>
+                            <button onclick="window.close()" style="padding: 10px 20px; background-color: #333; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; margin-left: 10px;">
+                                Close
+                            </button>
+                        </div>
+                    </body>
+                    </html>
+                `);
+                
+                // Close the document to finish loading
+                printWindow.document.close();
+            }
+            
+            // Load saved data when page loads
+            loadApplicationData();
+            
+            // Form submission
+            const applicationForm = document.getElementById('applicationForm');
+            
+            applicationForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                // Validate all required fields
+                const requiredInputs = applicationForm.querySelectorAll('input[required], select[required], textarea[required]');
+                let isValid = true;
+                
+                requiredInputs.forEach(input => {
+                    if (!input.value.trim()) {
+                        input.classList.add('is-invalid');
+                        isValid = false;
+                    } else {
+                        input.classList.remove('is-invalid');
+                    }
+                });
+                
+                if (isValid) {
+                    // Clear saved application data on successful submission
+                    localStorage.removeItem('mlss_application_data');
+                    
+                    // Simulate form submission
+                    const formData = new FormData(applicationForm);
+                    
+                    // In a real implementation, you would send this data to your server or a form service like Formspree
+                    // For the static GitHub Pages demo, we'll just show a success message
+                    
+                    // Show success message
+                    applicationForm.style.display = 'none';
+                    document.querySelector('.form-progress').style.display = 'none';
+                    document.getElementById('successMessage').style.display = 'block';
+                    
+                    // Scroll to success message
+                    document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+            
+            // Toast notification
+            window.showToast = function(title, message) {
+                const toast = document.getElementById('toast');
+                const toastTitle = toast.querySelector('.toast-title');
+                const toastText = toast.querySelector('.toast-text');
+                
+                toastTitle.textContent = title;
+                toastText.textContent = message;
+                
+                toast.classList.add('show');
+                
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 3000);
+            };
+            
+            window.closeToast = function() {
+                document.getElementById('toast').classList.remove('show');
+            };
+            
+            // Add input event listeners to clear validation errors on input
+            const allInputs = document.querySelectorAll('input, select, textarea');
+            
+            allInputs.forEach(input => {
+                input.addEventListener('input', () => {
+                    input.classList.remove('is-invalid');
+                });
+            });
+            
+            // Newsletter form submission
+            const newsletterForm = document.querySelector('.newsletter-form');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    
+                    // Add newsletter form submission logic here
+                    alert('Thank you for subscribing to our newsletter!');
+                    newsletterForm.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>

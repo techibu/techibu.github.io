@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the academic programs offered at Mayuge Light Secondary School, including O-Level, A-Level, and specialized programs.">
+    <title>Academics - Mayuge Light Secondary School</title>
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .header {
+            background-color: #1B6EF2;
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo img {
+            height: 60px;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .page-header {
+            background-color: #f5f5f5;
+            padding: 60px 0;
+            text-align: center;
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/IMG-20250422-WA0022.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            position: relative;
+        }
+        .page-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .section-title h2 {
+            font-size: 2rem;
+            color: #1B6EF2;
+        }
+        .programs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .program-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .program-card:hover {
+            transform: translateY(-5px);
+        }
+        .program-header {
+            height: 150px;
+            background-color: #1B6EF2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+        }
+        .program-content {
+            padding: 30px;
+        }
+        .program-content h3 {
+            color: #1B6EF2;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .subjects-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 20px;
+        }
+        .subject-tag {
+            background-color: #f0f8f0;
+            color: #1B6EF2;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .curriculum-section {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .curriculum-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        .curriculum-card {
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        .curriculum-card h3 {
+            color: #1B6EF2;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #2A8C47;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        .curriculum-card ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .curriculum-card ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .curriculum-card ul li:before {
+            content: "•";
+            color: #1B6EF2;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        .facilities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .facility-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .facility-icon {
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f5f5f5;
+            font-size: 3rem;
+            color: #1B6EF2;
+        }
+        .facility-content {
+            padding: 20px;
+        }
+        .facility-content h3 {
+            color: #1B6EF2;
+            margin-top: 0;
+        }
+        .faculty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .faculty-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .faculty-content {
+            padding: 20px;
+        }
+        .faculty-content h3 {
+            color: #1B6EF2;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        .faculty-content .department {
+            color: #2A8C47;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 15px;
+        }
+        .footer {
+            background-color: #1B6EF2;
+            color: white;
+            padding: 40px 0 20px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .footer-column h3 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #2A8C47;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        .footer-column a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer-column a:hover {
+            text-decoration: underline;
+        }
+        .copyright {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .page-title {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 40px 0;
+            }
+            .curriculum-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <h1>MAYUGE LIGHT SS</h1>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="academics.html">Academics</a>
+                    <a href="admissions.html">Admissions</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="news.html">News</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="donate.html">Donate</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Academic Programs</h1>
+            <p>Discover our comprehensive curriculum designed to nurture and develop well-rounded students</p>
+        </div>
+    </section>
+
+    <!-- Programs Overview -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Programs</h2>
+                <p>At Mayuge Light Secondary School, we offer a well-rounded curriculum that balances academic excellence with character development and life skills.</p>
+            </div>
+            
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-header">
+                        📚
+                    </div>
+                    <div class="program-content">
+                        <h3>O-Level (Senior 1-4)</h3>
+                        <p>Our O-Level program follows the Ugandan national curriculum and prepares students for the Uganda Certificate of Education (UCE) examinations.</p>
+                        <div class="subjects-list">
+                            <span class="subject-tag">Mathematics</span>
+                            <span class="subject-tag">English</span>
+                            <span class="subject-tag">Biology</span>
+                            <span class="subject-tag">Chemistry</span>
+                            <span class="subject-tag">Physics</span>
+                            <span class="subject-tag">Geography</span>
+                            <span class="subject-tag">History</span>
+                            <span class="subject-tag">CRE</span>
+                            <span class="subject-tag">Agriculture</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-header">
+                        🧪
+                    </div>
+                    <div class="program-content">
+                        <h3>A-Level (Senior 5-6)</h3>
+                        <p>The A-Level program offers specialized combinations of subjects designed to prepare students for university education and future careers.</p>
+                        <div class="subjects-list">
+                            <span class="subject-tag">Physics</span>
+                            <span class="subject-tag">Chemistry</span>
+                            <span class="subject-tag">Biology</span>
+                            <span class="subject-tag">Mathematics</span>
+                            <span class="subject-tag">Economics</span>
+                            <span class="subject-tag">Geography</span>
+                            <span class="subject-tag">Literature</span>
+                            <span class="subject-tag">History</span>
+                            <span class="subject-tag">Divinity</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-header">
+                        🎭
+                    </div>
+                    <div class="program-content">
+                        <h3>Co-Curricular Activities</h3>
+                        <p>We offer a rich variety of co-curricular activities to develop students' talents, interests, and social skills outside the classroom.</p>
+                        <div class="subjects-list">
+                            <span class="subject-tag">Sports</span>
+                            <span class="subject-tag">Music & Dance</span>
+                            <span class="subject-tag">Debate Club</span>
+                            <span class="subject-tag">Science Club</span>
+                            <span class="subject-tag">Art Club</span>
+                            <span class="subject-tag">Drama</span>
+                            <span class="subject-tag">Environmental Club</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section class="section" style="background-color: #f5f5f5;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Curriculum Details</h2>
+                <p>Our curriculum is designed to provide a strong foundation in core subjects while developing critical thinking, problem-solving, and creative skills.</p>
+            </div>
+            
+            <div class="curriculum-section">
+                <div class="curriculum-card">
+                    <h3>O-Level Subjects</h3>
+                    <div class="curriculum-grid">
+                        <ul>
+                            <li>English Language</li>
+                            <li>Mathematics</li>
+                            <li>Physics</li>
+                            <li>Chemistry</li>
+                            <li>Biology</li>
+                            <li>Geography</li>
+                            <li>History</li>
+                        </ul>
+                        <ul>
+                            <li>Christian Religious Education</li>
+                            <li>Islamic Religious Education</li>
+                            <li>Agriculture</li>
+                            <li>Computer Studies</li>
+                            <li>Fine Art</li>
+                            <li>Physical Education</li>
+                            <li>Entrepreneurship</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="curriculum-card">
+                    <h3>A-Level Subject Combinations</h3>
+                    <div class="curriculum-grid">
+                        <div>
+                            <strong>Science Combinations:</strong>
+                            <ul>
+                                <li>PCM: Physics, Chemistry, Mathematics</li>
+                                <li>PCB: Physics, Chemistry, Biology</li>
+                                <li>BCM: Biology, Chemistry, Mathematics</li>
+                                <li>MEG: Mathematics, Economics, Geography</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Arts Combinations:</strong>
+                            <ul>
+                                <li>HEG: History, Economics, Geography</li>
+                                <li>HED: History, Economics, Divinity</li>
+                                <li>GED: Geography, Economics, Divinity</li>
+                                <li>LAG: Literature, Art, Geography</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>All combinations include General Paper and Computer Studies as subsidiary subjects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Facilities -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Academic Facilities</h2>
+                <p>We provide state-of-the-art facilities to enhance the learning experience and support student success.</p>
+            </div>
+            
+            <div class="facilities-grid">
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        🧪
+                    </div>
+                    <div class="facility-content">
+                        <h3>Science Laboratories</h3>
+                        <p>Well-equipped Physics, Chemistry, and Biology labs for practical learning experiences.</p>
+                    </div>
+                </div>
+                
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        📚
+                    </div>
+                    <div class="facility-content">
+                        <h3>Library</h3>
+                        <p>Comprehensive library with a wide collection of books, journals, and digital resources.</p>
+                    </div>
+                </div>
+                
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        💻
+                    </div>
+                    <div class="facility-content">
+                        <h3>Computer Lab</h3>
+                        <p>Modern computer lab with internet access for computer studies and research.</p>
+                    </div>
+                </div>
+                
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        🎨
+                    </div>
+                    <div class="facility-content">
+                        <h3>Art Studio</h3>
+                        <p>Creative space for fine arts and crafts with necessary materials and tools.</p>
+                    </div>
+                </div>
+                
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        📝
+                    </div>
+                    <div class="facility-content">
+                        <h3>Study Rooms</h3>
+                        <p>Quiet study spaces for focused individual and group learning sessions.</p>
+                    </div>
+                </div>
+                
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        🏀
+                    </div>
+                    <div class="facility-content">
+                        <h3>Sports Facilities</h3>
+                        <p>Well-maintained fields and courts for various sports and physical education.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Section -->
+    <section class="section" style="background-color: #f5f5f5;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Faculty</h2>
+                <p>Our dedicated team of experienced educators is committed to nurturing each student's potential.</p>
+            </div>
+            
+            <div class="faculty-grid">
+                <div class="faculty-card">
+                    <div class="faculty-content">
+                        <h3>Mr. Mubiru David</h3>
+                        <span class="department">Mathematics Department</span>
+                        <p>With over 15 years of teaching experience, Mr. Mubiru leads our Mathematics department with expertise and dedication.</p>
+                    </div>
+                </div>
+                
+                <div class="faculty-card">
+                    <div class="faculty-content">
+                        <h3>Ms. Nabirye Sarah</h3>
+                        <span class="department">Science Department</span>
+                        <p>Ms. Nabirye coordinates our Science programs, bringing innovative teaching methods to Physics and Chemistry.</p>
+                    </div>
+                </div>
+                
+                <div class="faculty-card">
+                    <div class="faculty-content">
+                        <h3>Mr. Okello Peter</h3>
+                        <span class="department">Languages Department</span>
+                        <p>Mr. Okello's passion for literature and languages has inspired many students to excel in English and Literature.</p>
+                    </div>
+                </div>
+                
+                <div class="faculty-card">
+                    <div class="faculty-content">
+                        <h3>Ms. Nakato Joyce</h3>
+                        <span class="department">Humanities Department</span>
+                        <p>Ms. Nakato brings history to life in her engaging classes, encouraging critical thinking and analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>P.O. Box 124, Mayuge, Uganda</li>
+                        <li>Phone: +256751018625 / +256750224121</li>
+                        <li>Mobile: +256782616387</li>
+                        <li>Email: info@mayugelightss.ac.ug</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="news.html">News & Events</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>School Leadership</h3>
+                    <ul>
+                        <li>Director: Mr. Batesa Moses</li>
+                        <li>Headteacher: Mr. Baliruno Isaac</li>
+                        <li>Deputy Academics: Ms. Nakakooza Jackyline</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect With Us</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Mayuge Light Secondary School. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apply for admission to Mayuge Light Secondary School. Learn about our requirements, procedure, and download application forms.">
+    <title>Admissions - Mayuge Light Secondary School</title>
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .header {
+            background-color: #1B6EF2; /* Updated to blue primary */
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo img {
+            height: 60px;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .page-header {
+            background-color: #f5f5f5;
+            padding: 60px 0;
+            text-align: center;
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/IMG-20250422-WA0007.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            position: relative;
+        }
+        .page-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .section-title h2 {
+            font-size: 2rem;
+            color: #1B6EF2;
+        }
+        .admission-process {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .process-step {
+            display: flex;
+            margin-bottom: 30px;
+        }
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background-color: #1B6EF2;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        .step-content h3 {
+            margin-top: 0;
+            color: #1B6EF2;
+        }
+        .requirements-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .requirements-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .requirements-list ul li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        .requirements-list ul li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #1B6EF2;
+            font-weight: bold;
+        }
+        .download-card {
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            max-width: 600px;
+            margin: 40px auto;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .download-btn {
+            display: inline-block;
+            background-color: #1B6EF2;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+        .download-btn:hover {
+            background-color: #1559c7;
+        }
+        .fee-structure {
+            max-width: 800px;
+            margin: 40px auto;
+        }
+        .fee-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .fee-table th, .fee-table td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        .fee-table th {
+            background-color: #1B6EF2;
+            color: white;
+        }
+        .fee-table tr:nth-child(even) {
+            background-color: #f5f5f5;
+        }
+        .application-form {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: #f5f5f5;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, 
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+        .form-group textarea {
+            height: 100px;
+        }
+        .btn-submit {
+            background-color: #1B6EF2;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .btn-submit:hover {
+            background-color: #1559c7;
+        }
+        .footer {
+            background-color: #1B6EF2;
+            color: white;
+            padding: 40px 0 20px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .footer-column h3 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #2A8C47;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        .footer-column a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer-column a:hover {
+            text-decoration: underline;
+        }
+        .copyright {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .faq-section {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+        .faq-question {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #1B6EF2;
+            cursor: pointer;
+        }
+        .faq-answer {
+            padding-left: 20px;
+        }
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .page-title {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 40px 0;
+            }
+            .process-step {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .step-number {
+                margin-bottom: 10px;
+            }
+            .fee-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <h1>MAYUGE LIGHT SS</h1>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="academics.html">Academics</a>
+                    <a href="admissions.html">Admissions</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="news.html">News</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="donate.html">Donate</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Admissions</h1>
+            <p>Join our community of learners and begin your journey to success</p>
+        </div>
+    </section>
+
+    <!-- Admissions Introduction -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Welcome to Our Admissions Page</h2>
+                <p>Thank you for considering Mayuge Light Secondary School for your education. We offer a comprehensive curriculum, experienced faculty, and a supportive learning environment.</p>
+            </div>
+            
+            <div class="admission-process">
+                <h3>Admission Process</h3>
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Application Submission</h3>
+                        <p>Complete and submit the application form along with the required documents. You can download the application form below or request a physical copy from our administrative office.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Document Verification</h3>
+                        <p>Our admissions team will review and verify all submitted documents to ensure they meet our requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Entrance Assessment</h3>
+                        <p>Qualified applicants will be invited for an entrance assessment to evaluate their academic readiness for our programs.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Interview</h3>
+                        <p>Following the assessment, selected candidates and their parents/guardians will be invited for an interview with our administrative team.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Admission Decision</h3>
+                        <p>Based on the assessment and interview results, the admission decision will be communicated to the applicants.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Registration</h3>
+                        <p>Successful applicants will be invited to complete the registration process, including fee payment and orientation.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="download-card">
+                <h3>Application Options</h3>
+                <p>You can apply to Mayuge Light Secondary School using our convenient online application system or by downloading our application form.</p>
+                <a href="apply-now.html" class="download-btn" style="background-color: #2A8C47; margin-right: 10px;">Apply Online Now</a>
+                <a href="#" class="download-btn">Download Application Form (PDF)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements Section -->
+    <section class="section" style="background-color: #f5f5f5;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Admission Requirements</h2>
+            </div>
+            
+            <div class="requirements-list">
+                <h3>Required Documents</h3>
+                <ul>
+                    <li>Completed application form</li>
+                    <li>Copy of birth certificate</li>
+                    <li>Academic records from previous school (report cards for the last three terms)</li>
+                    <li>Leaving certificate from previous school</li>
+                    <li>Four passport-sized photographs</li>
+                    <li>Immunization records</li>
+                    <li>Copy of parent/guardian's national ID</li>
+                </ul>
+                
+                <h3>Age Requirements</h3>
+                <p>Students enrolling for Senior One should be between 12 and 14 years of age. For students joining other classes, the age requirement will be considered accordingly.</p>
+                
+                <h3>Academic Requirements</h3>
+                <p>For admission to Senior One, candidates should have successfully completed Primary Seven and performed well in the Primary Leaving Examinations (PLE). For admission to other classes, candidates should have satisfactory academic records from their previous schools.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Fee Structure -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Fee Structure</h2>
+                <p>Below is our fee structure for the current academic year:</p>
+            </div>
+            
+            <div class="fee-structure">
+                <table class="fee-table">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>O-Level (S.1-S.4)</th>
+                            <th>A-Level (S.5-S.6)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tuition Fee (per term)</td>
+                            <td>UGX 450,000</td>
+                            <td>UGX 550,000</td>
+                        </tr>
+                        <tr>
+                            <td>Development Fee (annual)</td>
+                            <td>UGX 100,000</td>
+                            <td>UGX 100,000</td>
+                        </tr>
+                        <tr>
+                            <td>Boarding Fee (per term)</td>
+                            <td>UGX 350,000</td>
+                            <td>UGX 350,000</td>
+                        </tr>
+                        <tr>
+                            <td>Uniform (one-time)</td>
+                            <td>UGX 150,000</td>
+                            <td>UGX 150,000</td>
+                        </tr>
+                        <tr>
+                            <td>Books & Stationery (per term)</td>
+                            <td>UGX 100,000</td>
+                            <td>UGX 120,000</td>
+                        </tr>
+                        <tr>
+                            <td>Computer Lab Fee (per term)</td>
+                            <td>UGX 50,000</td>
+                            <td>UGX 50,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p><strong>Note:</strong> All fees are subject to change. Please contact the school administration for the most up-to-date information.</p>
+            </div>
+            
+            <div class="download-card">
+                <h3>Download Full Fee Structure</h3>
+                <p>For a detailed breakdown of all fees and payment options, please download our complete fee structure document.</p>
+                <a href="#" class="download-btn">Download Fee Structure (PDF)</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="section" style="background-color: #f5f5f5;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-section">
+                <div class="faq-item">
+                    <div class="faq-question">What is the application deadline?</div>
+                    <div class="faq-answer">
+                        <p>Applications are accepted throughout the year. However, for the best chance of admission, we recommend applying at least one month before the start of the term.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Are scholarships available?</div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer limited scholarships based on academic merit and financial need. Please contact our administration office for more information on scholarship applications.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What are the boarding facilities like?</div>
+                    <div class="faq-answer">
+                        <p>Our boarding facilities include comfortable dormitories with proper supervision, balanced meals, regular study hours, and various recreational activities.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do you accept mid-term transfers?</div>
+                    <div class="faq-answer">
+                        <p>Yes, we accept mid-term transfers subject to availability. Transfer students must provide academic records from their previous school and may need to undergo an assessment.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What is your teacher-to-student ratio?</div>
+                    <div class="faq-answer">
+                        <p>We maintain a teacher-to-student ratio of approximately 1:30 to ensure quality instruction and individual attention.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How can I schedule a visit to the school?</div>
+                    <div class="faq-answer">
+                        <p>You can schedule a visit by calling our administrative office at +256751018625 or by sending an email to info@mayugelightss.ac.ug. We offer guided tours for prospective students and their families.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>P.O. Box 124, Mayuge, Uganda</li>
+                        <li>Phone: +256751018625 / +256750224121</li>
+                        <li>Mobile: +256782616387</li>
+                        <li>Email: info@mayugelightss.ac.ug</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="news.html">News & Events</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>School Leadership</h3>
+                    <ul>
+                        <li>Director: Mr. Batesa Moses</li>
+                        <li>Headteacher: Mr. Baliruno Isaac</li>
+                        <li>Deputy Academics: Ms. Nakakooza Jackyline</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect With Us</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Mayuge Light Secondary School. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

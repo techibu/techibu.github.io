@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Mayuge Light Secondary School - our history, mission, vision, and the dedicated team behind our success since 2009.">
+    <meta name="keywords" content="Mayuge Light Secondary School, school history, mission, vision, school values, Uganda education">
+    <meta name="author" content="Mayuge Light Secondary School">
+    
+    <title>About Us - Mayuge Light Secondary School</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <style>
+        /* Enhanced Styling */
+        :root {
+            --accent: #F27405;
+            --accent-light: #FFA54C;
+            --primary: #1B6EF2;
+            --primary-dark: #1559c7;
+            --primary-light: #3a82f7;
+            --secondary: #2A8C47;
+            --secondary-dark: #1f6734;
+            --secondary-light: #35a955;
+            --white: #ffffff;
+            --light: #f8f9fa;
+            --dark: #333333;
+            --gray: #6c757d;
+            --border-radius: 8px;
+            --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            position: relative;
+        }
+        
+        .text-primary { color: var(--primary) !important; }
+        .text-secondary { color: var(--secondary) !important; }
+        .text-white { color: var(--white) !important; }
+        .text-center { text-align: center !important; }
+        
+        .bg-primary { background-color: var(--primary) !important; }
+        .bg-secondary { background-color: var(--secondary) !important; }
+        .bg-light { background-color: var(--light) !important; }
+        .bg-primary-light { background-color: var(--primary-light) !important; }
+        
+        .mb-0 { margin-bottom: 0 !important; }
+        .mb-1 { margin-bottom: 0.25rem !important; }
+        .mb-2 { margin-bottom: 0.5rem !important; }
+        .mb-3 { margin-bottom: 1rem !important; }
+        .mb-4 { margin-bottom: 1.5rem !important; }
+        .mb-5 { margin-bottom: 3rem !important; }
+        
+        .mt-0 { margin-top: 0 !important; }
+        .mt-1 { margin-top: 0.25rem !important; }
+        .mt-2 { margin-top: 0.5rem !important; }
+        .mt-3 { margin-top: 1rem !important; }
+        .mt-4 { margin-top: 1.5rem !important; }
+        .mt-5 { margin-top: 3rem !important; }
+        
+        .py-0 { padding-top: 0 !important; padding-bottom: 0 !important; }
+        .py-1 { padding-top: 0.25rem !important; padding-bottom: 0.25rem !important; }
+        .py-2 { padding-top: 0.5rem !important; padding-bottom: 0.5rem !important; }
+        .py-3 { padding-top: 1rem !important; padding-bottom: 1rem !important; }
+        .py-4 { padding-top: 1.5rem !important; padding-bottom: 1.5rem !important; }
+        .py-5 { padding-top: 3rem !important; padding-bottom: 3rem !important; }
+        
+        .px-0 { padding-left: 0 !important; padding-right: 0 !important; }
+        .px-1 { padding-left: 0.25rem !important; padding-right: 0.25rem !important; }
+        .px-2 { padding-left: 0.5rem !important; padding-right: 0.5rem !important; }
+        .px-3 { padding-left: 1rem !important; padding-right: 1rem !important; }
+        .px-4 { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
+        .px-5 { padding-left: 3rem !important; padding-right: 3rem !important; }
+        
+        /* Header & Navigation */
+        .header {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: var(--transition);
+        }
+        
+        .header.scrolled {
+            padding: 10px 0;
+            background-color: rgba(27, 110, 242, 0.95);
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background-color: var(--white);
+            color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        
+        .logo h1 {
+            font-size: 1.6rem;
+            margin: 0;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+        
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            padding: 8px 0;
+            position: relative;
+            transition: var(--transition);
+        }
+        
+        .nav-links a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: var(--white);
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+        
+        .nav-links a.active:after {
+            width: 100%;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.5rem;
+        }
+        
+        /* Page Header */
+        .page-header {
+            padding: 180px 0 100px;
+            text-align: center;
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/IMG-20250422-WA0003.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--white);
+            position: relative;
+        }
+        
+        .page-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .page-header p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto;
+            animation: fadeInUp 1s ease 0.2s;
+            animation-fill-mode: both;
+        }
+        
+        /* Breadcrumb */
+        .breadcrumb {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 10px;
+        }
+        
+        .breadcrumb a {
+            color: var(--white);
+            text-decoration: none;
+            opacity: 0.8;
+            transition: var(--transition);
+        }
+        
+        .breadcrumb a:hover {
+            opacity: 1;
+        }
+        
+        .breadcrumb span {
+            opacity: 0.5;
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: var(--white);
+            padding: 12px 30px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0 10px 10px;
+            transition: var(--transition);
+            border: 2px solid transparent;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: var(--secondary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        .btn-outline-primary {
+            background-color: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+        
+        .btn-sm {
+            padding: 8px 20px;
+            font-size: 0.85rem;
+        }
+        
+        /* Sections */
+        .section {
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            display: inline-block;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .section-title p {
+            color: var(--gray);
+            max-width: 700px;
+            margin: 20px auto 0;
+        }
+        
+        /* About Content Styling */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .about-content h3 {
+            color: var(--primary);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .about-content h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--secondary);
+        }
+        
+        .about-content p {
+            margin-bottom: 20px;
+            color: var(--gray);
+        }
+        
+        .about-image {
+            position: relative;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.8s ease;
+        }
+        
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .about-image:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 2px solid var(--primary);
+            top: 20px;
+            left: 20px;
+            z-index: -1;
+            border-radius: var(--border-radius);
+        }
+        
+        /* Timeline */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+        
+        .timeline:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 2px;
+            background-color: var(--primary);
+            transform: translateX(-50%);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 50px;
+        }
+        
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .timeline-content {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            position: relative;
+            width: calc(50% - 40px);
+        }
+        
+        .timeline-content h3 {
+            color: var(--primary);
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        .timeline-content p {
+            margin-bottom: 0;
+        }
+        
+        .timeline-item:nth-child(odd) .timeline-content {
+            float: left;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-content {
+            float: right;
+        }
+        
+        .timeline-item:after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+        
+        .timeline-dot {
+            width: 20px;
+            height: 20px;
+            background-color: var(--secondary);
+            border-radius: 50%;
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        
+        .timeline-date {
+            position: absolute;
+            top: 30px;
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        .timeline-item:nth-child(odd) .timeline-date {
+            right: -150px;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-date {
+            left: -150px;
+        }
+        
+        /* Values Section */
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .value-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            border-top: 4px solid var(--primary);
+            height: 100%;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .value-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .value-card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .value-card p {
+            color: var(--gray);
+        }
+        
+        /* Team Section */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 40px;
+        }
+        
+        .team-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+        
+        .team-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .team-image {
+            height: 320px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .team-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s ease;
+        }
+        
+        .team-card:hover .team-image img {
+            transform: scale(1.05);
+        }
+        
+        .team-content {
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .team-content h3 {
+            margin-top: 0;
+            margin-bottom: 5px;
+            color: var(--primary);
+        }
+        
+        .team-role {
+            color: var(--secondary);
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .team-social {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .team-social a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary-light);
+            color: var(--primary);
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+        
+        .team-social a:hover {
+            background-color: var(--primary);
+            color: var(--white);
+            transform: translateY(-5px);
+        }
+        
+        /* Counter Section */
+        .counter-section {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 80px 0;
+            background-image: linear-gradient(rgba(4, 99, 7, 0.85), rgba(4, 99, 7, 0.85)), url('images/IMG-20250422-WA0003.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .counter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+        
+        .counter-item i {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .counter-number {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .counter-text {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 70px 0 20px;
+            position: relative;
+        }
+        
+        .footer:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 10px;
+            background: linear-gradient(90deg, var(--secondary) 0%, var(--primary) 50%, var(--secondary) 100%);
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+        }
+        
+        .footer-column h3 {
+            margin-top: 0;
+            margin-bottom: 25px;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 10px;
+            display: inline-block;
+            font-size: 1.5rem;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .footer-column ul li:before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+        }
+        
+        .footer-column a {
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-column a:hover {
+            color: var(--secondary-light);
+            padding-left: 5px;
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        /* Social icons */
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.1);
+            color: var(--white);
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--secondary);
+            transform: translateY(-5px);
+        }
+        
+        /* Back to top button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 99;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--secondary);
+            transform: translateY(-5px);
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .fadeIn { animation: fadeIn 1s ease both; }
+        .fadeInUp { animation: fadeInUp 1s ease both; }
+        .slideInLeft { animation: slideInLeft 1s ease both; }
+        .slideInRight { animation: slideInRight 1s ease both; }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 992px) {
+            .page-header h1 {
+                font-size: 2.8rem;
+            }
+            
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .about-image:before {
+                display: none;
+            }
+            
+            .timeline:before {
+                left: 30px;
+            }
+            
+            .timeline-content {
+                width: calc(100% - 80px);
+                float: right !important;
+                margin-left: 80px;
+            }
+            
+            .timeline-dot {
+                left: 30px;
+            }
+            
+            .timeline-date {
+                position: relative !important;
+                top: 0 !important;
+                left: 0 !important;
+                right: auto !important;
+                margin-bottom: 15px;
+                display: block;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                padding: 10px 0;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background-color: var(--primary);
+                flex-direction: column;
+                gap: 0;
+                height: 0;
+                overflow: hidden;
+                transition: height 0.3s ease;
+                z-index: 1000;
+            }
+            
+            .nav-links.active {
+                height: auto;
+                padding: 20px 0;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            }
+            
+            .nav-links a {
+                display: block;
+                padding: 12px 20px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            
+            .nav-links a:after {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .page-header {
+                padding: 140px 0 70px;
+            }
+            
+            .page-header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .section {
+                padding: 60px 0;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .counter-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .counter-number {
+                font-size: 2.5rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .counter-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Back to Top Button -->
+    <a href="#" id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <div class="logo-icon">M</div>
+                    <h1>MAYUGE LIGHT SS</h1>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="about.html" class="active">About</a>
+                    <a href="academics.html">Academics</a>
+                    <a href="admissions.html">Admissions</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="news.html">News</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="donate.html">Donate</a>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>About Us</h1>
+            <p>Learn about our history, mission, and the dedicated team behind our success</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <a href="about.html" class="active">About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Our Story</h2>
+                <p>From humble beginnings to a center of educational excellence in the region</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content" data-aos="fade-right">
+                    <h3>Building a Legacy of Excellence</h3>
+                    <p>Mayuge Light Secondary School was founded in 2009 with a vision to provide quality and affordable education to the community. From humble beginnings with just a few classrooms and a handful of dedicated teachers, we have grown into a premier educational institution in the region.</p>
+                    <p>Over the years, our commitment to academic excellence, character development, and holistic education has not wavered. We've continually invested in our infrastructure, teaching staff, and educational resources to provide our students with the best possible learning environment.</p>
+                    <p>Today, Mayuge Light Secondary School stands as a beacon of educational excellence, producing graduates who excel in both academic pursuits and as responsible citizens making positive contributions to society.</p>
+                    <a href="gallery.html" class="btn btn-sm btn-outline-primary mt-3">Explore Our Campus</a>
+                </div>
+                
+                <div class="about-image" data-aos="fade-left">
+                    <img src="images/IMG-20250422-WA0014.jpg" alt="School compound aerial view">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="section bg-primary-light">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Our Journey</h2>
+                <p>Key milestones in our growth and development over the years</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <h3>Foundation</h3>
+                        <p>Mayuge Light Secondary School was established with the mission to provide quality education to the local community.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2009</div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <h3>First Graduating Class</h3>
+                        <p>We celebrated our first graduating class with exceptional results in the national examinations.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2013</div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <h3>Campus Expansion</h3>
+                        <p>Major expansion of our facilities including new classrooms, science laboratories, and library resources.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2016</div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <h3>Recognition of Excellence</h3>
+                        <p>Recognized as one of the top-performing schools in the district based on national examination results.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2018</div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <h3>New Sports Facilities</h3>
+                        <p>Inaugurated state-of-the-art sports facilities to enhance our co-curricular program offerings.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2021</div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <h3>Technology Integration</h3>
+                        <p>Implementation of digital learning resources and computer labs to prepare students for the modern world.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Mission, Vision & Values</h2>
+                <p>The guiding principles that define who we are and what we stand for</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="images/IMG-20250422-WA0022.jpg" alt="Students in classroom">
+                </div>
+                
+                <div class="about-content" data-aos="fade-left">
+                    <h3>Our Mission</h3>
+                    <p>To provide quality education that empowers students with knowledge, skills, and values necessary for academic excellence and personal growth in a rapidly changing world.</p>
+                    
+                    <h3 class="mt-4">Our Vision</h3>
+                    <p>To be a leading center of academic excellence that nurtures responsible, innovative, and compassionate global citizens who contribute positively to society.</p>
+                </div>
+            </div>
+            
+            <div class="values-grid mt-5">
+                <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="value-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Excellence</h3>
+                    <p>We strive for excellence in all endeavors, pushing boundaries and exceeding expectations in academics, character, and service.</p>
+                </div>
+                
+                <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Integrity</h3>
+                    <p>We uphold high ethical standards and honesty in all our interactions and decisions, cultivating a culture of trust and accountability.</p>
+                </div>
+                
+                <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Respect</h3>
+                    <p>We value the dignity, diversity, and unique contributions of every individual in our community, fostering an inclusive and supportive environment.</p>
+                </div>
+                
+                <div class="value-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>We encourage creative thinking and innovative approaches to teaching and learning, preparing students for the challenges of the future.</p>
+                </div>
+                
+                <div class="value-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="value-icon">
+                        <i class="fas fa-compass"></i>
+                    </div>
+                    <h3>Leadership</h3>
+                    <p>We develop leadership skills in our students, preparing them to lead with purpose, compassion, and a commitment to positive change.</p>
+                </div>
+                
+                <div class="value-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="value-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Community Service</h3>
+                    <p>We promote a spirit of giving back to the community and making a positive impact on society through meaningful service and engagement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counter Section -->
+    <section class="counter-section">
+        <div class="container">
+            <div class="counter-grid">
+                <div class="counter-item" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-user-graduate"></i>
+                    <div class="counter-number" data-count="2500">0</div>
+                    <div class="counter-text">Alumni</div>
+                </div>
+                
+                <div class="counter-item" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <div class="counter-number" data-count="30">0</div>
+                    <div class="counter-text">Experienced Teachers</div>
+                </div>
+                
+                <div class="counter-item" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-trophy"></i>
+                    <div class="counter-number" data-count="50">0</div>
+                    <div class="counter-text">Awards Won</div>
+                </div>
+                
+                <div class="counter-item" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-clock"></i>
+                    <div class="counter-number" data-count="15">0</div>
+                    <div class="counter-text">Years of Excellence</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Our Leadership Team</h2>
+                <p>Meet the dedicated professionals guiding our institution</p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-content">
+                        <h3>Mr. Batesa Moses</h3>
+                        <span class="team-role">Director</span>
+                        <p>With over 20 years of experience in education management, Mr. Batesa provides strategic direction and oversight for the school's growth and development. His vision and leadership have been instrumental in establishing Mayuge Light Secondary School as a center of excellence.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-content">
+                        <h3>Mr. Baliruno Isaac</h3>
+                        <span class="team-role">Headteacher</span>
+                        <p>As our dedicated Headteacher, Mr. Baliruno leads the day-to-day operations of the school, ensuring high standards of teaching and learning are maintained. His commitment to educational excellence and student welfare has fostered a positive and productive school environment.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-content">
+                        <h3>Ms. Nakakooza Jackyline</h3>
+                        <span class="team-role">Deputy Head - Academics</span>
+                        <p>Ms. Nakakooza oversees the academic programs, curriculum development, and teaching standards to ensure excellent educational outcomes for all students. Her expertise in curriculum design and implementation has significantly contributed to our students' academic success.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p class="mb-4">Mayuge Light Secondary School is a premier educational institution committed to providing quality education and nurturing well-rounded individuals since 2009.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="news.html">News & Events</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="donate.html">Support Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>P.O. Box 124, Mayuge, Uganda</li>
+                        <li>Phone: +256751018625 / +256750224121</li>
+                        <li>Mobile: +256782616387</li>
+                        <li>Email: info@mayugelightss.ac.ug</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p class="mb-3">Subscribe to our newsletter to receive updates on school events, news, and announcements.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Mayuge Light Secondary School. All Rights Reserved. | Designed with ❤️ for quality education</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script>
+        // Initialize AOS animations
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease',
+                once: true,
+                offset: 50
+            });
+            
+            // Mobile menu toggle
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navLinks = document.getElementById('navLinks');
+            
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                    
+                    // Toggle menu icon
+                    const icon = mobileMenuBtn.querySelector('i');
+                    if (icon.classList.contains('fa-bars')) {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-times');
+                    } else {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+            }
+            
+            // Header scroll effect
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('.header');
+                if (window.scrollY > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+                
+                // Back to top button visibility
+                const backToTop = document.getElementById('backToTop');
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('active');
+                } else {
+                    backToTop.classList.remove('active');
+                }
+            });
+            
+            // Back to top functionality
+            document.getElementById('backToTop').addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Counter animation
+            const counterNumbers = document.querySelectorAll('.counter-number');
+            
+            counterNumbers.forEach(number => {
+                const target = parseInt(number.getAttribute('data-count'));
+                const duration = 2000; // 2 seconds
+                const step = target / (duration / 16); // 16ms per frame (60fps)
+                let current = 0;
+                
+                const updateCounter = () => {
+                    if (current < target) {
+                        current += step;
+                        number.textContent = Math.round(current);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        number.textContent = target;
+                    }
+                };
+                
+                // Start counter animation when element is in viewport
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            updateCounter();
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.5 });
+                
+                observer.observe(number);
+            });
+            
+            // Newsletter form submission
+            const newsletterForm = document.querySelector('.newsletter-form');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    
+                    // Add newsletter form submission logic here
+                    alert('Thank you for subscribing to our newsletter!');
+                    newsletterForm.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
