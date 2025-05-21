@@ -1,69 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.mayugelightss.ac.ug/</loc>
-    <lastmod>2025-05-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.mayugelightss.ac.ug/about.html</loc>
-    <lastmod>2025-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.mayugelightss.ac.ug/academics.html</loc>
-    <lastmod>2025-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.mayugelightss.ac.ug/admissions.html</loc>
-    <lastmod>2025-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.mayugelightss.ac.ug/apply-now.html</loc>
-    <lastmod>2025-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.mayugelightss.ac.ug/gallery.html</loc>
-    <lastmod>2025-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.mayugelightss.ac.ug/news.html</loc>
-    <lastmod>2025-05-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.mayugelightss.ac.ug/contact.html</loc>
-    <lastmod>2025-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.mayugelightss.ac.ug/donate.html</loc>
-    <lastmod>2025-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.mayugelightss.ac.ug/privacy-policy.html</loc>
-    <lastmod>2025-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.mayugelightss.ac.ug/terms-of-service.html</loc>
-    <lastmod>2025-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.mayugelightss.com/</loc>
+  <lastmod>2025-05-21T21:31:30+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.mayugelightss.com/index.html</loc>
+  <lastmod>2025-05-21T21:31:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.mayugelightss.com/about.html</loc>
+  <lastmod>2025-05-21T21:31:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.mayugelightss.com/academics.html</loc>
+  <lastmod>2025-05-21T21:31:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.mayugelightss.com/admissions.html</loc>
+  <lastmod>2025-05-21T21:31:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.mayugelightss.com/gallery.html</loc>
+  <lastmod>2025-05-21T21:31:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.mayugelightss.com/news.html</loc>
+  <lastmod>2025-05-21T21:31:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.mayugelightss.com/contact.html</loc>
+  <lastmod>2025-05-21T21:31:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.mayugelightss.com/donate.html</loc>
+  <lastmod>2025-05-21T21:31:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.mayugelightss.com/apply-now.html</loc>
+  <lastmod>2025-05-21T21:31:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.mayugelightss.com/privacy-policy.html</loc>
+  <lastmod>2025-05-21T21:31:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.mayugelightss.com/terms-of-service.html</loc>
+  <lastmod>2025-05-21T21:31:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
 </urlset>
